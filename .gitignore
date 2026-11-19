@@ -1,14 +1,19 @@
-next-env.d.ts
-node_modules
+Vite
 .next
-.tsbuildinfo
-*.tsbuildinfo
+node_modules
+
+# local env files
 .env
 .env*.local
-vercel.json
-package-lock.json
-.sentry*
-.swc
+
+# production
+build
+out
+dist
+
+# misc
+.tsbuildinfo
+*.tsbuildinfo
 *.log
 .DS_Store
 Thumbs.db
