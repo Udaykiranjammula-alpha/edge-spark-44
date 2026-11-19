@@ -1,0 +1,1 @@
+import type {Product} from "@/types/commerce";export function FallbackViewer({product}:{product:Product}){return <div className="flex h-full min-h-96 items-center justify-center bg-gradient-to-br from-zinc-800 to-zinc-950 font-display text-4xl italic">{product.name}</div>}

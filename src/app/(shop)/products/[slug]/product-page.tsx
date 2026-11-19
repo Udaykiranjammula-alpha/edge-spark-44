@@ -78,9 +78,7 @@ export default function ProductPageInner({ product }: ProductPageProps) {
 
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
         <div className="relative aspect-[3/4] overflow-hidden rounded-sm bg-[var(--color-bg-tertiary)]">
-          {product.images[0] && (
-            <ProductViewer product={product} />
-          )}
+          <ProductViewer product={product} />
           {alternateImages.length > 0 && (
             <div className="absolute right-3 top-3 flex gap-2">
               {product.images.slice(0, 4).map((img, idx) => (

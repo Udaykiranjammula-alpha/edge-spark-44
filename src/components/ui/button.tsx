@@ -1,0 +1,1 @@
+import type {ButtonHTMLAttributes} from "react";export function Button({className="",variant,size,...props}:ButtonHTMLAttributes<HTMLButtonElement>&{variant?:string;size?:string}){return <button {...props} className={`rounded-full bg-lime-300 px-6 py-3 font-semibold text-black transition hover:bg-lime-200 disabled:opacity-40 ${className}`}/>}

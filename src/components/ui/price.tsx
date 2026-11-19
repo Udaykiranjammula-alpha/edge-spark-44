@@ -1,0 +1,1 @@
+import {formatCurrency} from "@/lib/format";export function Price({amountInPaise}:{amountInPaise:number;compareAtAmountInPaise?:number}){return <span className="text-xl font-semibold">{formatCurrency(amountInPaise)}</span>}

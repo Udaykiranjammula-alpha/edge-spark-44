@@ -1,0 +1,3 @@
+export interface ProductVariant{id:string;colorName:string;sizeName:string;price:number;available:boolean}
+export interface Product{id:string;slug:string;name:string;tagline:string;description:string;price:number;compareAtPrice?:number;collectionIds:string[];images:{id:string;url:string;alt:string}[];colors:{name:string;value:string;hex:string}[];sizes:{name:string;label:string;available:boolean}[];variants:ProductVariant[];deliveryNote:string;returnPolicy:string}
+export interface Collection{id:string;slug:string;title:string;subtitle:string;description:string;sortOrder:number;coverImage?:string;productIds:string[]}
